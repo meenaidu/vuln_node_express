@@ -21,5 +21,6 @@ jobs:
         run: nohup rpm run start &
       - name: Run HawkScan
         uses: stackhawk/hawkscan-action@v1.3.1
+        
         with:
           apiKey: ${{ secrets.HAWK_API_KEY }}
